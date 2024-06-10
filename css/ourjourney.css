@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    font: normal 16px / 28px "Roboto", Helvetica, Arial, Verdana, sans-serif;
+  }
+  body{
+      background-color: #fff;
+      width:100%;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+  }
+  :root{
+      --main-color:#1c1c1c;
+  }
+  
+  .navbar.sticky {
+    padding: 0%;
+    background: #fff;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.07);
+  }
+  .navbar.sticky .nav-item .nav-link {
+    color: #282828 !important;
+  }
+  
+  .navbar-brand img {
+    width: 60%;
+  }
+  .nav-item .nav-link{
+      color: #fff !important ;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: .2px;
+      transition: all .3s;
+      position: relative;
+  }
+  .nav-item .nav-link::before,
+  .nav-link.active::before{
+      content: "";
+      position:absolute;
+      bottom: 0;
+      left: 7;
+      width: 0;
+      height: 2px;
+      background-color: #40c5f2;
+      transition: all .3s  ease-in-out 0s;
+  }
+  .nav-link:hover::before,
+  .nav-link.active::before{
+      width: 80%;
+  }
+  .nav-link:hover{
+      color: #fff;
+      cursor: pointer;
+  }
+  
+.home{
+    background-image: url(../images/ourJourney/Header\ pic.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 65vh;
+    position: relative;
+}
+.home-layer{
+    background-color: #100f0f99;
+    height: 100%;
+    width: 100%;
+}
+.home-data h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.journey-data .journey-header,
+.about-data .about-header,
+.why-data .why-header,
+.company-num-data .company-num-header,
+.company-num-info h3{
+    font-weight: bold;
+}
+
+.home-layer .header-line .element-header-line,
+.journey-data .header-line .element-header-line,
+.about-data .header-line .element-header-line,
+.why-data .header-line .element-header-line,
+.company-num-data .header-line .element-header-line{
+    width: 200px;
+    margin:  auto;
+    background-color: #61bece;
+    text-align: center;
+    padding-top: 1.5px;
+    padding-bottom: 1.8px;
+    display: block;
+    margin-bottom: 40px;
+}
+.journey-data .header-line .element-header-line,
+.about-data .header-line .element-header-line,
+.why-data .header-line .element-header-line,
+.company-num-data .header-line .element-header-line{
+    width: 150px;
+    margin:  0;
+    margin-top:  20px;
+}
+
+.about-info p,
+.journey-info p,
+.why-info p,
+.why-info ul li,
+.company-num-info p,
+.progress-info span{
+    color: #7a7a7a;
+}
+.why-info p{
+    text-decoration: underline;
+}
+
+.company-num-info h3{
+    color: #333333;
+    font-size: 34px;
+}
+
+.progress-bar-container{
+    background-color: rgba(0, 0, 0, 0.07);
+    border-radius: 0px;
+    overflow: hidden;
+    color: #fff;
+    /* height: 100%; */
+}
+.progress-bar{
+    background-color: #61BECE;
+    width: 80%;
+    height: 10px;
+    line-height: 10px;
+}
+
+footer .footer .footer-head {
+    font-weight: bold;
+}
+footer p, a {
+    color: #8b8d94;;
+}

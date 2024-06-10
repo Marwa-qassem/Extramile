@@ -1,0 +1,296 @@
+*{
+  box-sizing: border-box;
+  font: normal 16px / 28px "Roboto", Helvetica, Arial, Verdana, sans-serif;
+}
+body{
+    background-color: #fff;
+    width:100%;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+:root{
+    --main-color:#1c1c1c;
+}
+
+.navbar.sticky {
+  padding: 0%;
+  background: #fff;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.07);
+}
+.navbar.sticky .nav-item .nav-link {
+  color: #282828 !important;
+}
+
+
+.navbar-brand img {
+  width: 60%;
+}
+.nav-item .nav-link{
+    color: #fff !important ;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .2px;
+    transition: all .3s;
+    position: relative;
+}
+.nav-item .nav-link::before,
+.nav-link.active::before{
+    content: "";
+    position:absolute;
+    bottom: 0;
+    left: 7;
+    width: 0;
+    height: 2px;
+    background-color: #40c5f2;
+    transition: all .3s  ease-in-out 0s;
+}
+.nav-link:hover::before,
+.nav-link.active::before{
+    width: 80%;
+}
+.nav-link:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.home{
+    background-size: cover;
+    background-position: center top;
+    height: 140vh;
+    position: relative;
+    animation: image 500s infinite;
+    -webkit-animation: image 500s infinite;
+}
+.home-layer{
+    background-color: rgba(41, 41, 41, 0.599);
+    height: 100%;
+    width: 100%;
+}
+  @keyframes image {
+    0% {
+      background-image: url(../images/homePage/loopingImages/3.jpg);
+    }
+    5% {
+      background-image: url(../images/homePage/loopingImages/9.jpg);
+    }
+    7% {
+      background-image: url(../images/homePage/loopingImages/A4.jpg);
+    }
+    10% {
+      background-image: url(../images/homePage/loopingImages/ajmanMangrooves.jpg);
+    }
+    13% {
+      background-image: url(../images/homePage/loopingImages/AlAin.jpg);
+    }
+    17% {
+      background-image: url(../images/homePage/loopingImages/Aswan.jpg);
+    }
+    20% {
+      background-image: url(../images/homePage/loopingImages/BurjAlArab.jpg);
+    }
+    23% {
+      background-image: url(../images/homePage/loopingImages/Burjkhalifa.jpg);
+    }
+    27% {
+      background-image: url(../images/homePage/loopingImages/DesertSafari.jpg);
+    }
+    30% {
+      background-image: url(../images/homePage/loopingImages/Dubai.jpg);
+    }
+    32% {
+      background-image: url(../images/homePage/loopingImages/DubaiFrame.jpg);
+    }
+    35% {
+      background-image: url(../images/homePage/loopingImages/Events.jpg);
+    }
+    37% {
+      background-image: url(../images/homePage/loopingImages/galadinner.JPG);
+    }
+    40% {
+      background-image: url(../images/homePage/loopingImages/galadinnerr.jpg);
+    }
+    42% {
+      background-image: url(../images/homePage/loopingImages/Gouna.jpg);
+    }
+    45% {
+      background-image: url(../images/homePage/loopingImages/GrandMosque.jpg);
+    }
+    47% {
+      background-image: url(../images/homePage/loopingImages/Hurghada.jpg);
+    }
+    50% {
+      background-image: url(../images/homePage/loopingImages/Incentives.jpg);
+    }
+    52% {
+      background-image: url(../images/homePage/loopingImages/Luxor.jpg);
+    }
+    55% {
+      background-image: url(../images/homePage/loopingImages/Luxor2.jpg);
+    }
+    57% {
+      background-image: url(../images/homePage/loopingImages/Meeting.png);
+    }
+    60% {
+      background-image: url(../images/homePage/loopingImages/W8A1062.JPG);
+    }
+    62% {
+      background-image: url(../images/homePage/loopingImages/meeting2.png);
+    }
+    65% {
+      background-image: url(../images/homePage/loopingImages/meeting4.jpg);
+    }
+    67% {
+      background-image: url(../images/homePage/loopingImages/ourjourney.JPG);
+    }
+    70% {
+      background-image: url(../images/homePage/loopingImages/Picture1.png);
+    }
+    75% {
+      background-image: url(../images/homePage/loopingImages/Picture2.png);
+    }
+    80% {
+      background-image: url(../images/homePage/loopingImages/productlaunch.jpg);
+    }
+    85% {
+      background-image: url(../images/homePage/loopingImages/Pyramids.jpg);
+    }
+    90% {
+      background-image: url(../images/homePage/loopingImages/Sharjah.jpg);
+    }
+    92% {
+      background-image: url(../images/homePage/loopingImages/Sharjah2.jpg);
+    }
+    94% {
+      background-image: url(../images/homePage/loopingImages/SharmelSheikh2.jpg);
+    }
+    96% {
+      background-image: url(../images/homePage/loopingImages/TB2.jpg);
+    }
+    98% {
+      background-image: url(../images/homePage/loopingImages/Virtualevent.png);
+    }
+    100% {
+      background-image: url(../images/homePage/loopingImages/vritual\ 2.png);
+    }
+  }
+
+.home-data img{
+    width: 60%;
+    /* margin-top: 10%; */
+    vertical-align: middle;
+    display: inline-block;
+}
+.home-data h1 {
+    font-weight: bold;
+    font-size: 67px;
+}
+.home-data h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+.home-data p{
+    font-weight: 550;
+    font-size: 25px; 
+}
+.home .home-layer .header-btn .bttn{
+  background-color: #61bece;
+  border: none;
+  color: white;
+  padding: 20px;
+  width: 20%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 50px 15px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+
+#about{
+  background-color: #f7f7f7;
+}
+
+.about-content .about-data a{
+  color: #333;
+  text-decoration: none ;
+}
+.about-content .about-data a h5{
+  font-weight: bold;
+}
+
+.about-content .about-data p{
+  line-height: 1.8;
+  padding-top: 4%;
+  word-spacing: normal;
+  color: #8b8d94;
+}
+.event-content .event-header{
+  margin-bottom: 15px;
+}
+.event-content .event-header h2{
+  font-weight: 700;
+  line-height: 30px;
+  color:#333333;
+}
+.event-content .event-header-line .element-header-line{
+  width: 140px;
+  margin: 0 auto;
+  background-color: #61bece;
+  text-align: center;
+  padding-top: 1.8px;
+  padding-bottom: 1.8px;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.event-content .event-data h4{
+  color: #333333;
+  font: normal bold 20px / 30px "Roboto", Helvetica, Arial, Verdana, sans-serif;
+  text-transform: none;
+}
+.event-content .event-data p{
+  color: #7a7a7a;
+  font: normal 16px / 28px "Roboto", Helvetica, Arial, Verdana, sans-serif;
+}
+
+.event-ifo-icon ul li{
+  list-style: none;
+  font-weight: 700;
+  color: #333333;
+  line-height: 2;
+}
+
+
+
+
+
+
+footer .footer .footer-head {
+    font-weight: bold;
+}
+footer p, a {
+    color: #8b8d94;;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .nav-item .nav-link{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.home .home-layer .header-btn .bttn{
+
+  width: 70%;
+  margin: 2% ;
+
+}
+
+}
