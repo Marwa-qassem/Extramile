@@ -1,108 +1,117 @@
-*{
+* {
     box-sizing: border-box;
     font: normal 16px / 28px "Roboto", Helvetica, Arial, Verdana, sans-serif;
-  }
-  body{
-      background-color: #fff;
-      width:100%;
-      font-family: 'Montserrat', sans-serif;
-      line-height: 1.6;
-  }
-  :root{
-      --main-color:#1c1c1c;
-  }
-  
-  .navbar.sticky {
+}
+
+body {
+    background-color: #fff;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+ :root {
+    --main-color: #1c1c1c;
+}
+
+.navbar.sticky {
     padding: 0%;
     background: #fff;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.07);
-  }
-  .navbar.sticky .nav-item .nav-link {
+}
+
+.navbar.sticky .nav-item .nav-link {
     color: #282828 !important;
-  }
-  
-  .navbar-brand img {
+}
+
+.navbar-brand img {
     width: 60%;
-  }
-  .nav-item .nav-link {
-    color: #fff !important ;
+    /* background-color: red; */
+}
+
+.nav-item .nav-link {
+    color: #fff !important;
     font-size: 16px;
     font-weight: bold;
-    letter-spacing: 0.2px;
-    transition: all 0.3s;
+    letter-spacing: .2px;
+    transition: all .3s;
     position: relative;
-  }
-  .nav-item .nav-link::before,
-  .nav-link.active::before,
-  .navbar.sticky .nav-link.active::before {
+}
+
+.nav-item .nav-link::before,
+.nav-link.active::before {
     content: "";
     position: absolute;
     bottom: 0;
     left: 7;
     width: 0;
     height: 2px;
-    background-color: #ffffff;
-    transition: all 0.3s ease-in-out 0s;
-  }
-  .navbar.sticky .nav-link.active::before {
-    background: -webkit-linear-gradient(left, #1ebbf0 30%, #39dfaa 100%);
-  }
-  .nav-link:hover::before,
-  .nav-link.active::before,
-  .navbar.sticky .nav-link:hover::before,
-  .navbar.sticky .nav-link.active::before {
-  width: 80%;
-  }
-  .nav-link:hover{
+    background-color: #40c5f2;
+    transition: all .3s ease-in-out 0s;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+    width: 80%;
+}
+
+.nav-link:hover {
     color: #fff;
     cursor: pointer;
-  }
-  .navbar.sticky.nav-link.active::before:hover {
-    background-color: -webkit-linear-gradient(left, #1ebbf0 30%, #39dfaa 100%);
-  }
-.home{
-    background-image: url(../images/contactUs/contactUs.jpg);
+}
+
+.home {
+    background-image: url(../../images/destinations/Egypt/Egypt\ header\ pic.jpg);
     background-size: cover;
     background-position: center center;
     height: 65vh;
     position: relative;
 }
-.home-layer{
+
+.home-layer {
     background-color: #100f0f99;
     height: 100%;
     width: 100%;
 }
+
 .home-data h1 {
     font-weight: bold;
     font-size: 50px;
 }
-.contact-icon i{
+
+.contact-icon i {
     display: inline-block;
 }
-.contact-icon .contact-span{
+
+.contact-icon .contact-span {
     color: rgba(0, 0, 0, 0.3);
     font-weight: bold;
     font-size: 15px;
     display: block;
     margin: auto;
 }
-.contact-icon h4 , p{
+
+.contact-icon h4,
+p {
     font-weight: bold;
     color: #333;
 }
 
-#contactForm{
+#contactForm {
     background-color: #f7f7f7;
 }
+
 .contact-form {
     padding-top: 3%;
     padding-left: 0;
-
 }
-.contact-form form label{
+
+.contact-form form label {
     color: #8b8d94;
 }
-.contact-form form input, textarea{
+
+.contact-form form input,
+textarea {
     width: 100%;
     color: #8b8d94;
     border-style: solid;
@@ -114,13 +123,13 @@
     border-radius: 2px;
     margin-bottom: 10px;
 }
-  
-.contact-form h5{
+
+.contact-form h5 {
     font-weight: bold;
     font-size: 25px;
 }
 
-.contact-form .form-btn{
+.contact-form .form-btn {
     padding: 12px 18px 12px 18px;
     border-radius: 1px;
     border: none;
@@ -131,36 +140,30 @@
     color: #ffffff;
     background: linear-gradient(135deg, #1ebbf0 30%, #39dfaa 100%);
 }
-  
 
-.location h3{
+.location h3 {
     font-weight: bold;
     color: #333;
     font: normal bold 34px / 44px "Roboto", Helvetica, Arial, Verdana, sans-serif;
 }
-.location .location-data p{
+
+.location .location-data p {
     font: normal 16px / 28px "Roboto", Helvetica, Arial, Verdana, sans-serif;
     word-spacing: normal;
     color: #8b8d94;
 }
-.location .location-data a{
+
+.location .location-data a {
     color: #1ebbf0;
     text-decoration: underline;
 }
-  
 
-  
-  
-  
-  
-  
-  
-  footer .footer .footer-head {
-      font-weight: bold;
-  }
-  footer p, a {
+footer .footer .footer-head {
+    font-weight: bold;
+}
+
+footer p,
+a {
     color: #8b8d94;
-  }
-  
-
-  
+    ;
+}

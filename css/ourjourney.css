@@ -24,32 +24,41 @@
   .navbar-brand img {
     width: 60%;
   }
-  .nav-item .nav-link{
-      color: #fff !important ;
-      font-size: 16px;
-      font-weight: bold;
-      letter-spacing: .2px;
-      transition: all .3s;
-      position: relative;
+  .nav-item .nav-link {
+    color: #fff !important ;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    transition: all 0.3s;
+    position: relative;
   }
   .nav-item .nav-link::before,
-  .nav-link.active::before{
-      content: "";
-      position:absolute;
-      bottom: 0;
-      left: 7;
-      width: 0;
-      height: 2px;
-      background-color: #40c5f2;
-      transition: all .3s  ease-in-out 0s;
+  .nav-link.active::before,
+  .navbar.sticky .nav-link.active::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 7;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .navbar.sticky .nav-link.active::before {
+    background: -webkit-linear-gradient(left, #1ebbf0 30%, #39dfaa 100%);
   }
   .nav-link:hover::before,
-  .nav-link.active::before{
-      width: 80%;
+  .nav-link.active::before,
+  .navbar.sticky .nav-link:hover::before,
+  .navbar.sticky .nav-link.active::before {
+  width: 80%;
   }
   .nav-link:hover{
-      color: #fff;
-      cursor: pointer;
+    color: #fff;
+    cursor: pointer;
+  }
+  .navbar.sticky.nav-link:hover {
+    background-color: -webkit-linear-gradient(left, #1ebbf0 30%, #39dfaa 100%);
   }
   
 .home{

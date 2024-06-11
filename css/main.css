@@ -1,15 +1,15 @@
-*{
+* {
   box-sizing: border-box;
   font: normal 16px / 28px "Roboto", Helvetica, Arial, Verdana, sans-serif;
 }
-body{
-    background-color: #fff;
-    width:100%;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
+body {
+  background-color: #fff;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
 }
-:root{
-    --main-color:#1c1c1c;
+:root {
+  --main-color: #1c1c1c;
 }
 
 .navbar.sticky {
@@ -21,178 +21,195 @@ body{
   color: #282828 !important;
 }
 
-
 .navbar-brand img {
   width: 60%;
 }
-.nav-item .nav-link{
-    color: #fff !important ;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: .2px;
-    transition: all .3s;
-    position: relative;
+.nav-item .nav-link {
+  color: #fff !important ;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  transition: all 0.3s;
+  position: relative;
 }
 .nav-item .nav-link::before,
-.nav-link.active::before{
-    content: "";
-    position:absolute;
-    bottom: 0;
-    left: 7;
-    width: 0;
-    height: 2px;
-    background-color: #40c5f2;
-    transition: all .3s  ease-in-out 0s;
+.nav-link.active::before,
+.navbar.sticky .nav-link.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 7;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar.sticky .nav-link.active::before {
+  background: -webkit-linear-gradient(left, #1ebbf0 30%, #39dfaa 100%);
 }
 .nav-link:hover::before,
-.nav-link.active::before{
-    width: 80%;
+.nav-link.active::before,
+.navbar.sticky .nav-link:hover::before,
+.navbar.sticky .nav-link.active::before {
+width: 80%;
 }
 .nav-link:hover{
-    color: #fff;
-    cursor: pointer;
+  color: #fff;
+  cursor: pointer;
+}
+.navbar.sticky.nav-link.active::before:hover {
+  background-color: -webkit-linear-gradient(left, #1ebbf0 30%, #39dfaa 100%);
 }
 
-.home{
-    background-size: cover;
-    background-position: center top;
-    height: 140vh;
-    position: relative;
-    animation: image 500s infinite;
-    -webkit-animation: image 500s infinite;
+.home {
+  background-size: cover;
+  background-position: center top;
+  height: 140vh;
+  position: relative;
+  animation: image 500s infinite;
 }
-.home-layer{
-    background-color: rgba(41, 41, 41, 0.599);
-    height: 100%;
-    width: 100%;
+
+.test{
+  background-image: url(../images/testimonials/testimonial.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  position: relative;
 }
-  @keyframes image {
-    0% {
-      background-image: url(../images/homePage/loopingImages/3.jpg);
-    }
-    5% {
-      background-image: url(../images/homePage/loopingImages/9.jpg);
-    }
-    7% {
-      background-image: url(../images/homePage/loopingImages/A4.jpg);
-    }
-    10% {
-      background-image: url(../images/homePage/loopingImages/ajmanMangrooves.jpg);
-    }
-    13% {
-      background-image: url(../images/homePage/loopingImages/AlAin.jpg);
-    }
-    17% {
-      background-image: url(../images/homePage/loopingImages/Aswan.jpg);
-    }
-    20% {
-      background-image: url(../images/homePage/loopingImages/BurjAlArab.jpg);
-    }
-    23% {
-      background-image: url(../images/homePage/loopingImages/Burjkhalifa.jpg);
-    }
-    27% {
-      background-image: url(../images/homePage/loopingImages/DesertSafari.jpg);
-    }
-    30% {
-      background-image: url(../images/homePage/loopingImages/Dubai.jpg);
-    }
-    32% {
-      background-image: url(../images/homePage/loopingImages/DubaiFrame.jpg);
-    }
-    35% {
-      background-image: url(../images/homePage/loopingImages/Events.jpg);
-    }
-    37% {
-      background-image: url(../images/homePage/loopingImages/galadinner.JPG);
-    }
-    40% {
-      background-image: url(../images/homePage/loopingImages/galadinnerr.jpg);
-    }
-    42% {
-      background-image: url(../images/homePage/loopingImages/Gouna.jpg);
-    }
-    45% {
-      background-image: url(../images/homePage/loopingImages/GrandMosque.jpg);
-    }
-    47% {
-      background-image: url(../images/homePage/loopingImages/Hurghada.jpg);
-    }
-    50% {
-      background-image: url(../images/homePage/loopingImages/Incentives.jpg);
-    }
-    52% {
-      background-image: url(../images/homePage/loopingImages/Luxor.jpg);
-    }
-    55% {
-      background-image: url(../images/homePage/loopingImages/Luxor2.jpg);
-    }
-    57% {
-      background-image: url(../images/homePage/loopingImages/Meeting.png);
-    }
-    60% {
-      background-image: url(../images/homePage/loopingImages/W8A1062.JPG);
-    }
-    62% {
-      background-image: url(../images/homePage/loopingImages/meeting2.png);
-    }
-    65% {
-      background-image: url(../images/homePage/loopingImages/meeting4.jpg);
-    }
-    67% {
-      background-image: url(../images/homePage/loopingImages/ourjourney.JPG);
-    }
-    70% {
-      background-image: url(../images/homePage/loopingImages/Picture1.png);
-    }
-    75% {
-      background-image: url(../images/homePage/loopingImages/Picture2.png);
-    }
-    80% {
-      background-image: url(../images/homePage/loopingImages/productlaunch.jpg);
-    }
-    85% {
-      background-image: url(../images/homePage/loopingImages/Pyramids.jpg);
-    }
-    90% {
-      background-image: url(../images/homePage/loopingImages/Sharjah.jpg);
-    }
-    92% {
-      background-image: url(../images/homePage/loopingImages/Sharjah2.jpg);
-    }
-    94% {
-      background-image: url(../images/homePage/loopingImages/SharmelSheikh2.jpg);
-    }
-    96% {
-      background-image: url(../images/homePage/loopingImages/TB2.jpg);
-    }
-    98% {
-      background-image: url(../images/homePage/loopingImages/Virtualevent.png);
-    }
-    100% {
-      background-image: url(../images/homePage/loopingImages/vritual\ 2.png);
-    }
+
+.home-layer,
+.test-layer {
+  background-color: rgba(17, 16, 16, 0.518);
+  height: 100%;
+  width: 100%;
+}
+@keyframes image {
+  0% {
+    background-image: url(../images/homePage/loopingImages/3.jpg);
   }
+  5% {
+    background-image: url(../images/homePage/loopingImages/9.jpg);
+  }
+  7% {
+    background-image: url(../images/homePage/loopingImages/A4.jpg);
+  }
+  10% {
+    background-image: url(../images/homePage/loopingImages/ajmanMangrooves.jpg);
+  }
+  13% {
+    background-image: url(../images/homePage/loopingImages/AlAin.jpg);
+  }
+  17% {
+    background-image: url(../images/homePage/loopingImages/Aswan.jpg);
+  }
+  20% {
+    background-image: url(../images/homePage/loopingImages/BurjAlArab.jpg);
+  }
+  23% {
+    background-image: url(../images/homePage/loopingImages/Burjkhalifa.jpg);
+  }
+  27% {
+    background-image: url(../images/homePage/loopingImages/DesertSafari.jpg);
+  }
+  30% {
+    background-image: url(../images/homePage/loopingImages/Dubai.jpg);
+  }
+  32% {
+    background-image: url(../images/homePage/loopingImages/DubaiFrame.jpg);
+  }
+  35% {
+    background-image: url(../images/homePage/loopingImages/Events.jpg);
+  }
+  37% {
+    background-image: url(../images/homePage/loopingImages/galadinner.JPG);
+  }
+  40% {
+    background-image: url(../images/homePage/loopingImages/galadinnerr.jpg);
+  }
+  42% {
+    background-image: url(../images/homePage/loopingImages/Gouna.jpg);
+  }
+  45% {
+    background-image: url(../images/homePage/loopingImages/GrandMosque.jpg);
+  }
+  47% {
+    background-image: url(../images/homePage/loopingImages/Hurghada.jpg);
+  }
+  50% {
+    background-image: url(../images/homePage/loopingImages/Incentives.jpg);
+  }
+  52% {
+    background-image: url(../images/homePage/loopingImages/Luxor.jpg);
+  }
+  55% {
+    background-image: url(../images/homePage/loopingImages/Luxor2.jpg);
+  }
+  57% {
+    background-image: url(../images/homePage/loopingImages/Meeting.png);
+  }
+  60% {
+    background-image: url(../images/homePage/loopingImages/W8A1062.JPG);
+  }
+  62% {
+    background-image: url(../images/homePage/loopingImages/meeting2.png);
+  }
+  65% {
+    background-image: url(../images/homePage/loopingImages/meeting4.jpg);
+  }
+  67% {
+    background-image: url(../images/homePage/loopingImages/ourjourney.JPG);
+  }
+  70% {
+    background-image: url(../images/homePage/loopingImages/Picture1.png);
+  }
+  75% {
+    background-image: url(../images/homePage/loopingImages/Picture2.png);
+  }
+  80% {
+    background-image: url(../images/homePage/loopingImages/productlaunch.jpg);
+  }
+  85% {
+    background-image: url(../images/homePage/loopingImages/Pyramids.jpg);
+  }
+  90% {
+    background-image: url(../images/homePage/loopingImages/Sharjah.jpg);
+  }
+  92% {
+    background-image: url(../images/homePage/loopingImages/Sharjah2.jpg);
+  }
+  94% {
+    background-image: url(../images/homePage/loopingImages/SharmelSheikh2.jpg);
+  }
+  96% {
+    background-image: url(../images/homePage/loopingImages/TB2.jpg);
+  }
+  98% {
+    background-image: url(../images/homePage/loopingImages/Virtualevent.png);
+  }
+  100% {
+    background-image: url(../images/homePage/loopingImages/vritual\ 2.png);
+  }
+}
 
-.home-data img{
-    width: 60%;
-    /* margin-top: 10%; */
-    vertical-align: middle;
-    display: inline-block;
+.home-data img {
+  width: 60%;
+  /* margin-top: 10%; */
+  vertical-align: middle;
+  display: inline-block;
 }
 .home-data h1 {
-    font-weight: bold;
-    font-size: 67px;
+  font-weight: bold;
+  font-size: 67px;
 }
 .home-data h2 {
-    font-weight: bold;
-    font-size: 40px;
+  font-weight: bold;
+  font-size: 40px;
 }
-.home-data p{
-    font-weight: 550;
-    font-size: 25px; 
+.home-data p {
+  font-weight: 550;
+  font-size: 25px;
 }
-.home .home-layer .header-btn .bttn{
+.home .home-layer .header-btn .bttn {
   background-color: #61bece;
   border: none;
   color: white;
@@ -207,34 +224,39 @@ body{
   line-height: 16px;
 }
 
-
-#about{
+#about,
+#testimonial,
+#journey {
   background-color: #f7f7f7;
 }
 
-.about-content .about-data a{
+.about-content .about-data a {
   color: #333;
-  text-decoration: none ;
+  text-decoration: none;
 }
-.about-content .about-data a h5{
+.about-content .about-data a h5 {
   font-weight: bold;
 }
 
-.about-content .about-data p{
+.about-content .about-data p {
   line-height: 1.8;
   padding-top: 4%;
   word-spacing: normal;
   color: #8b8d94;
 }
-.event-content .event-header{
+.event-content .event-header {
   margin-bottom: 15px;
 }
-.event-content .event-header h2{
+.event-content .event-header h2,
+.testimonials-section h2,
+.journey-header h2 {
   font-weight: 700;
   line-height: 30px;
-  color:#333333;
+  color: #333333;
 }
-.event-content .event-header-line .element-header-line{
+.event-content .event-header-line .element-header-line,
+.testimonial-header-line .element-header-line,
+.journey-header-line .element-header-line {
   width: 140px;
   margin: 0 auto;
   background-color: #61bece;
@@ -245,52 +267,130 @@ body{
   margin-bottom: 40px;
 }
 
-.event-content .event-data h4{
+.event-content .event-data h4,
+.journey-data .journey-header {
   color: #333333;
   font: normal bold 20px / 30px "Roboto", Helvetica, Arial, Verdana, sans-serif;
   text-transform: none;
 }
-.event-content .event-data p{
+.event-content .event-data p,
+.journey-info p {
   color: #7a7a7a;
   font: normal 16px / 28px "Roboto", Helvetica, Arial, Verdana, sans-serif;
 }
 
-.event-ifo-icon ul li{
+.event-ifo-icon ul li {
   list-style: none;
   font-weight: 700;
   color: #333333;
   line-height: 2;
 }
 
+/* Testimonials section start */
+.testimonials-section {
+  padding: 50px 0;
+}
 
+.testimonial {
+  text-align: left;
+  margin-bottom: 30px;
+}
+.testimonial .quote {
+  font-size: 7rem;
+  color: #cccccc;
+}
+.testimonial p {
+  font-style: italic;
+  /* color: #7a7a7a; */
+  color: #8b8d94;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.testimonial p span {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+}
 
+.testimonial h5 {
+  margin-top: 10px;
+  /* font-weight: bold; */
+  color: #333333;
+}
+.testimonial small {
+  color: #61bece;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+/* Testimonials section end */
+.progress-info span {
+  color: #7a7a7a;
+}
+.progress-bar-container {
+  background-color: rgba(0, 0, 0, 0.07);
+  border-radius: 0px;
+  overflow: hidden;
+  color: #fff;
+}
+.progress-bar {
+  background-color: #61bece;
+  width: 80%;
+  height: 10px;
+  line-height: 10px;
+}
 
+.slider-contain {
+  overflow: hidden;
+}
+.slider {
+  animation: slidein 30s linear infinite;
+  white-space: nowrap;
+  -webkit-animation: slidein 30s linear infinite;
+}
+.logos {
+  width: 100%;
+  display: inline-block;
+  margin: 0px 0;
+}
+img {
+  animation: forwards 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
 
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 footer .footer .footer-head {
-    font-weight: bold;
+  font-weight: bold;
 }
-footer p, a {
-    color: #8b8d94;;
+footer p,
+a {
+  color: #8b8d94;
 }
-
-
-
-
-
-
 
 @media screen and (max-width: 768px) {
-  .nav-item .nav-link{
+  .nav-item .nav-link {
     font-size: 12px;
     font-weight: bold;
-}
+  }
 
-.home .home-layer .header-btn .bttn{
-
-  width: 70%;
-  margin: 2% ;
-
-}
-
+  .home .home-layer .header-btn .bttn {
+    width: 70%;
+    margin: 2%;
+  }
 }

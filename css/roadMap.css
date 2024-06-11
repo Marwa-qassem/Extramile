@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  font: normal 16px / 28px "Roboto", Helvetica, Arial, Verdana, sans-serif;
+}
+body {
+  background-color: #fff;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+}
+:root {
+  --main-color: #1c1c1c;
+}
+
+.navbar.sticky {
+  padding: 0%;
+  background: #fff;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.07);
+}
+.navbar.sticky .nav-item .nav-link {
+    color: #282828 !important;
+  }
+  
+  .navbar-brand img {
+    width: 60%;
+  }
+  .nav-item .nav-link {
+    color: #fff !important ;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    transition: all 0.3s;
+    position: relative;
+  }
+  .nav-item .nav-link::before,
+  .nav-link.active::before,
+  .navbar.sticky .nav-link.active::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 7;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .navbar.sticky .nav-link.active::before {
+    background: -webkit-linear-gradient(left, #1ebbf0 30%, #39dfaa 100%);
+  }
+  .nav-link:hover::before,
+  .nav-link.active::before,
+  .navbar.sticky .nav-link:hover::before,
+  .navbar.sticky .nav-link.active::before {
+  width: 80%;
+  }
+  .nav-link:hover{
+    color: #fff;
+    cursor: pointer;
+  }
+  .navbar.sticky.nav-link.active::before:hover {
+    background-color: -webkit-linear-gradient(left, #1ebbf0 30%, #39dfaa 100%);
+  }
+
+.map {
+  background-image: url(../images/roadMap/banner.jpg);
+  background-size: cover;
+  background-position: top top;
+  height: 60vh;
+  position: relative;
+}
+.map-layer {
+  background-color: #100f0f99;
+  height: 100%;
+  width: 100%;
+}
+.map-data h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 62px;
+}
+
+.road-map-info .road-map-header {
+  font-weight: bold;
+}
+
+.map-layer .header-line .element-header-line,
+.road-map-info .header-line .element-header-line {
+  width: 200px;
+  margin: auto;
+  background-color: #61bece;
+  text-align: center;
+  padding-top: 1.5px;
+  padding-bottom: 1.8px;
+  display: block;
+  margin-bottom: 40px;
+}
+.road-map-info .header-line .element-header-line {
+  width: 150px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.road-map-data p {
+  color: #7a7a7a;
+}
+
+.road-map-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  fill: #fff;
+  background-color: #61bece;
+  border-radius: 0px 0px 0px 0px;
+  padding: 10px 14px 10px 14px;
+}
+
+footer .footer .footer-head {
+  font-weight: bold;
+}
+footer p,
+a {
+  color: #8b8d94;
+}
